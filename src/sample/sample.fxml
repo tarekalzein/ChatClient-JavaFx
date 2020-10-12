@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #303030;" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="340.0" prefWidth="740.0">
+         <children>
+            <AnchorPane layoutX="348.0" layoutY="15.0" prefHeight="307.0" prefWidth="375.0" style="-fx-background-color: #505050;">
+               <children>
+                  <Label alignment="CENTER" layoutX="40.0" layoutY="21.0" prefHeight="42.0" prefWidth="294.0" text="Welcome to Client Chat" textAlignment="CENTER" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="92.0" text="Username" textFill="#f2f2f2">
+                      <font>
+                          <Font name="System Bold" size="12.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="129.0" text="Password" textFill="#f2f2f2">
+                      <font>
+                          <Font name="System Bold" size="12.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="202.0" text="Host" textFill="#f2f2f2">
+                      <font>
+                          <Font name="System Bold" size="12.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="262.0" layoutY="201.0" text="Port" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="host_textField" layoutX="78.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="169.0" promptText="ex: 127.0.0.1 or localhost" />
+                  <TextField fx:id="port_textField" layoutX="294.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="50.0" promptText="ex: 8080" />
+                  <TextField fx:id="username_textField" layoutX="127.0" layoutY="88.0" prefHeight="26.0" prefWidth="218.0" promptText="enter your username" />
+                  <PasswordField fx:id="password_textField" layoutX="127.0" layoutY="124.0" prefHeight="26.0" prefWidth="218.0" />
+                  <Button fx:id="connect_button" layoutX="125.0" layoutY="261.0" mnemonicParsing="false" onAction="#connect_button" prefHeight="26.0" prefWidth="125.0" text="Connect" />
+                  <Line endX="157.5999755859375" layoutX="187.0" layoutY="174.0" startX="-151.39999389648438" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="350.0" fitWidth="300.0" layoutX="27.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@/assets/chat-Icon.png" />
+                </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
