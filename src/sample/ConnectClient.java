@@ -23,6 +23,8 @@ public class ConnectClient {
     private ObservableList<String> messages;
 
     private Socket socket;
+    private static String USER_NAME= "You"; //TODO: replace later with username input from user.
+
 
     /**
      * Constructor to create a connection using two parameters: Host and Port
@@ -55,7 +57,7 @@ public class ConnectClient {
                     try{
                         String message= in.readLine();
                         Platform.runLater(()->{
-                            messages.add(message);
+                            messages.add("Server: " + message);
                         });
                     }catch (IOException e){
                         e.printStackTrace();
@@ -74,6 +76,7 @@ public class ConnectClient {
      * @param message string of the message.
      */
     public void sendMessage(String message){
+        messages.add(USER_NAME+ ": "+ message);
         out.println(message);
     }
 

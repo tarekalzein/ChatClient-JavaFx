@@ -7,7 +7,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.w3c.dom.Text;
 
+import javax.swing.*;
 import java.io.IOException;
 
 /**
@@ -22,7 +24,9 @@ public class Controller {
     @FXML
     TextField port_textField = new TextField();
     @FXML
-    TextField username_textField= new TextField();
+    TextField username_textField = new TextField();
+    @FXML
+    TextField password_textField = new TextField();
     @FXML
     Button exit_button = new Button();
 
@@ -31,6 +35,8 @@ public class Controller {
      */
     public void initialize(){
         connect_button.setDisable(true);
+        username_textField.setDisable(true);
+        password_textField.setDisable(true);
     }
 
     /**

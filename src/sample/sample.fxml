@@ -43,10 +43,10 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="host_textField" layoutX="78.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="169.0" promptText="ex: 127.0.0.1 or localhost" />
-                  <TextField fx:id="port_textField" layoutX="294.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="50.0" promptText="ex: 8080" />
                   <TextField fx:id="username_textField" layoutX="127.0" layoutY="88.0" prefHeight="26.0" prefWidth="218.0" promptText="enter your username" />
                   <PasswordField fx:id="password_textField" layoutX="127.0" layoutY="124.0" prefHeight="26.0" prefWidth="218.0" />
+                  <TextField fx:id="host_textField" layoutX="78.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="169.0" promptText="ex: 127.0.0.1 or localhost" />
+                  <TextField fx:id="port_textField" layoutX="294.0" layoutY="197.0" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="50.0" promptText="ex: 8080" />
                   <Button fx:id="connect_button" layoutX="125.0" layoutY="261.0" mnemonicParsing="false" onAction="#connect_button" prefHeight="26.0" prefWidth="125.0" text="Connect" />
                   <Line endX="157.5999755859375" layoutX="187.0" layoutY="174.0" startX="-151.39999389648438" />
                </children>

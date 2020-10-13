@@ -19,7 +19,6 @@ public class Chat {
     @FXML
     Label connection_status_label = new Label();
 
-
     /**
      * Method to bind and pass the connection object to this window.
      * @param connection
@@ -40,7 +39,7 @@ public class Chat {
     }
 
     /**
-     * Action Method that handles exiting the applicaiton on button press.
+     * Action Method that handles exiting the application on button press.
      * @throws IOException
      */
     public void exitButtonHandler() throws IOException {
